@@ -1,0 +1,47 @@
+<%= form_with(model: refund, local: true) do |form| %>
+  <% if refund.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(refund.errors.count, "error") %> prohibited this refund from being saved:</h2>
+
+      <ul>
+      <% refund.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :refund_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value, id: :refund_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :refund_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kind_id %>
+    <%= form.text_field :kind_id, id: :refund_kind_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situation_id %>
+    <%= form.text_field :situation_id, id: :refund_situation_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :refund_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

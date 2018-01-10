@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :refunds
   resources :kinds
   resources :situations
   get 'home/index'

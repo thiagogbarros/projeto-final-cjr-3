@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @refund.title %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @refund.value %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @refund.image %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @refund.kind %>
+</p>
+
+<p>
+  <strong>Situation:</strong>
+  <%= @refund.situation %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @refund.user %>
+</p>
+
+<%= link_to 'Edit', edit_refund_path(@refund) %> |
+<%= link_to 'Back', refunds_path %>
