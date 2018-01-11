@@ -1,5 +1,5 @@
 class Refund < ApplicationRecord
-  belongs_to :kind
-  belongs_to :situation
+  has_one :kind
+  has_one :situation
   belongs_to :user
 end
