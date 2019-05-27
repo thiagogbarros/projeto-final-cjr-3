@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create()
+Kind.create(name: "Compras")
+Kind.create(name: "Reembolso")
+Kind.create(name: "Capacitação")
+Situation.create(description: "Em Análise")
+Refund.create(title:"Compras Udemy",value: 20 , )
